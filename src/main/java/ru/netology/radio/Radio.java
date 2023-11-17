@@ -45,12 +45,6 @@ public class Radio {
     }
 
     public void setCurrentRadioVolume(int newCurrentRadioVolume) {
-        if (newCurrentRadioVolume < 0) {
-            return;
-        }
-        if (newCurrentRadioVolume > 100) {
-            return;
-        }
         currentRadioVolume = newCurrentRadioVolume;
     }
 
