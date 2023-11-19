@@ -154,4 +154,15 @@ public class RadioTest {
         int actual = radio.getCurrentRadioVolume();
         Assertions.assertEquals(expected, actual);
     }
+
+    @Test
+    public void shouldSwitchToAnotherRadioStation() {
+        Radio radio = new Radio(20);
+        radio.setCurrentRadioStation(15);
+
+        int expected = 15;
+        int actual = radio.getCurrentRadioStation();
+        Assertions.assertEquals(expected, actual);
+    }
+
 }
